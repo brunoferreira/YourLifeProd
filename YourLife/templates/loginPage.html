@@ -1,0 +1,28 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}
+YourLife
+{% endblock %}
+
+{% include "navbar.html" %}
+{% block content %}
+<div id= "main" class="" style="background-color: #F2F0E4; height: 100vh; width: 100%">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-lg-8 mx-lg-auto mx-md-auto">
+
+        <h1 class="pt-5 pb-2">Bem vindo ao YourLife!</h1>
+
+        <p class="lead">Faça seu login</p>
+        
+        {{ wtf.quick_form(form) }}
+
+        <p class="pt-5"><strong>{{ message }}</strong></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

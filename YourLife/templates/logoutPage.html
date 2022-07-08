@@ -1,0 +1,22 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}
+YourLife
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+{% endblock %}
+{% include "navbar.html" %}
+{% block content %}
+
+
+<div id= "main" class="" style="background-color: #F2F0E4; height: 100vh; width: 100%">
+    <div id="message" class="cent" style="text-align: center;">
+        <h1>Você saiu</h1>
+    </div>
+</div>
+
+{% endblock %}
+

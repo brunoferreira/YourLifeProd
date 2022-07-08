@@ -1,0 +1,117 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}
+YourLife
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+{% endblock %}
+{% include "navbar.html" %}
+{% block content %}
+
+
+<div id= "main" class="" style="background-color: #F2F0E4; width: 100%">
+    
+    <div id="message" style="text-align: center; padding-top: 15px; padding-bottom: 7px;">
+        <div>
+            <h1 style="font-size: 7em">YourLife</h1>
+        </div>
+        <div>
+            <a class="btn btn-primary" href="/register" role="button">Clique aqui para se registrar</a>
+        </div>
+    </div>
+    
+    <div id="message" style="text-align: center; padding-top: 7px; padding-bottom: 15px;">
+        <div>
+            <a class="btn btn-primary" href="/login" role="button">Login</a>
+        </div>
+    </div>
+
+    <div class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+    <div class="page-content">
+        <!-- Your content goes here -->
+        <!-- Img section -->
+        <div class="hero-section">
+
+        <div class="hero-text mdl-typography--text-center">
+
+            <h1 class="mdl-typography--display-2">Seu blog pessoal</h1>
+            <p class="mdl-typography--display-1">
+            Para programadores, pesquisadores e curiosos.
+            </p>
+
+        </div>
+        <!-- /.hero-text -->
+
+        </div>
+        <!-- /.hero-section -->
+
+        <!-- INTRO -->
+        <div id="intro" class="mdl-grid intro-section">
+        <div class="about mdl-cell mdl-cell--12-col">
+            <p class="mdl-typography--headline">
+            Bem vindo ao YourLife!
+            </p>
+            <p class="mdl-typography--headline">
+                Aqui é muito mais fácil fazer seu próprio blog pessoal.
+                </p>
+        </div>
+        <!-- /.about -->
+
+        </div>
+        <!--/.mdl-grid -->
+
+        <!-- Testimonial -->
+        <div class="mdl-grid mdl-grid--no-spacing fullwidth-panel">
+        <div class="mdl-cell mdl-cell--12-col mdl-typography--text-center quote-panel">
+            <blockquote>
+            <p>
+                Uma maneira fácil de ter seu blog pessoal.
+            </p>
+            <footer>
+                — <cite>YourLife</cite>
+            </footer>
+            </blockquote>
+
+        </div>
+        <!-- /.mdl-cell -->
+        </div>
+        <!--/.mdl-grid -->
+
+    </div>
+    <!-- /.page-content -->
+    </div>
+    <!-- /.tab1 -->
+
+    <!--/.contact-panel -->
+    <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone contact-panel address-panel mdl-typography--text-center mdl-color--indigo-100">
+
+        <p class="mdl-typography--title-color-contrast mdl-typography--text-nowrap mdl-typography--font-thin">
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" href="twitter.com">Twitter</a>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" href="plus.google.com">Google+</a>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" href="facebook.com">Facebook</a>
+        </p>
+    </div>
+    <!-- /.contact-panel -->
+
+    </div>
+    <!-- /.mdl-grid -->
+
+    <!-- FOOTER -->
+    <footer class="mdl-mini-footer mdl-color--indigo-200">
+    <div class="mdl-mini-footer__left-section">
+        <ul class="mdl-mini-footer__link-list">
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Privacy & Terms</a></li>
+        </ul>
+        &copy; YourLife
+    </div>
+    <!-- /.mdl-mini-footer__left-section -->
+    </footer>
+
+</div>
+
+
+{% endblock %}
